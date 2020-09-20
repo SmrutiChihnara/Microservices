@@ -1,0 +1,12 @@
+server:
+  port: 9092
+application :
+  name : ORDER-SERVICESS
+  eureka:
+  client :
+    register-with-client : true
+    featch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      instance :
+        hostname  : localhost
